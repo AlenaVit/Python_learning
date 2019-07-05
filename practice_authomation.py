@@ -22,7 +22,7 @@ elem3.click()
 
 txt = driver.find_element_by_id("primary")
 txt.clear()
-txt.send_keys("text")
+txt.send_keys("test_text")
 
 music_menu = driver.find_element_by_css_selector(".designControls .controlBlock:nth-of-type(7)")
 music_menu.click()
