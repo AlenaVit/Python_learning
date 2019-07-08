@@ -38,10 +38,10 @@ next_button = driver.find_element_by_css_selector(".md-dialog-footer--inline [ty
 next_button.click()
 
 time.sleep(20)
-ln_toggle = driver.find_element_by_css_selector("[for='LinkedIn-5793637'] div:nth-child(2)")
+ln_toggle = driver.find_element_by_css_selector("[for='LinkedIn-5844691'] [tabindex]")
 ln_toggle.click()
 
-twit_toggle = driver.find_element_by_css_selector("[for='Twitter-5793636'] div:nth-child(2)")
+twit_toggle = driver.find_element_by_css_selector("[for='Twitter-5844627'] div:nth-child(2)")
 twit_toggle.click()
 
 
