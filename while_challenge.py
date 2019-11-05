@@ -7,6 +7,8 @@ print("Please guess a number from 1 to {}:".format(highest))
 guess = int(input())
 
 while guess != answer:
+    if guess == 0:
+        break
     if guess < answer:
         print("Please get higher!")
     else:
@@ -17,7 +19,7 @@ while guess != answer:
 # if guess == answer:
 #    print("You've got it from first time!")
 # else:
-#    print("You've got it from first time!")
+#    print("You've got it from first time!")8
 
 
 

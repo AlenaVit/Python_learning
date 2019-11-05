@@ -6,15 +6,15 @@ driver = webdriver.Chrome()
 driver.get("https://app-rc.ripl.com/login")
 driver.implicitly_wait(20)
 assert "Ripl" in driver.title
-elem = driver.find_element_by_id("log-in-email")
-elem.clear()
-elem.send_keys("new6/14@ripl.com")
-elem2 = driver.find_element_by_id("log-in-pwd")
-elem2.send_keys("zxcv123")
-elem.send_keys(Keys.RETURN)
+login_field = driver.find_element_by_id("log-in-email")
+login_field.clear()
+login_field.send_keys("new6/14@ripl.com")
+login_pass = driver.find_element_by_id("log-in-pwd")
+login_pass.send_keys("zxcv123")
+login_field.send_keys(Keys.RETURN)
 
-elem3 = driver.find_element_by_css_selector(".plus")
-elem3.click()
+start_post = driver.find_element_by_css_selector(".plus")
+start_post.click()
 
 
 # another_des = driver.find_element_by_css_selector(".designList .designContainer:nth-of-type(3) .clickTarget")
