@@ -16,11 +16,16 @@
 
 powers = []
 for power in range (15, -1, -1):
-    powers.append (2 ** power)
+    powers.append(2 ** power)
 
 print(powers)
 
 x = int(input("Enter a number: "))
-for power in powers:
-    print(x // power, end='')
-    x %= power
+output = False
+for element in powers:
+    bit = x // element
+    if bit !=0 or element ==1:
+        output = True
+    if output:
+        print(bit, end='')
+    x %= element
